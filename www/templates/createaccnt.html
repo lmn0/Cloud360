@@ -1,0 +1,41 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">Create An Account</h1>
+    <div class="buttons">
+
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <form name="createAccnt">
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">Username</span>
+          <input type="text" name="uname" id="uname" ng-model="account.username" required/>
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Password</span>
+          <input type="password" name="pwd" id="pwd" ng-model="account.pwd"/>
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Confirm Password</span>
+          <input type="password" name="cpwd" id="cpwd" ng-model="account.cpwd"/>
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Email ID</span>
+          <input type="text" name="email" id="email" ng-model="account.email"/>
+        </label>
+        <label class="item item-checkbox">
+                Enable NFC
+                <label class="checkbox">
+                    <input type="checkbox" ng-model="account.nfc">
+                </label>
+            </label> 
+        <label class="item">
+          <button class="button button-block button-positive" type="button" ng-click="doCreate(account)">Create Account</button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-modal-view>
+
+

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.megster.nfc.reader" version="0.0.1"
+	xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+	<name>NfcReader</name>
+	<description>
+		PhoneGap NFC Reader Demo
+	</description>
+	<author email="don.coleman@gmail.com" href="http://github.com/don">
+		Don Coleman
+	</author>
+	<access origin="*" />
+	<preference name="fullscreen" value="true" />
+	<preference name="webviewbounce" value="true" />
+	<content src="index.html" />
+	<feature name="NfcPlugin">
+		<param name="android-package" value="com.chariotsolutions.nfc.plugin.NfcPlugin" />
+		<param name="onload" value="true" />
+		<param name="wp-package" value="NfcPlugin" />
+	</feature>
+	<feature name="NFC">
+		<param name="id" value="com.chariotsolutions.nfc.plugin" />
+	</feature>
+</widget>

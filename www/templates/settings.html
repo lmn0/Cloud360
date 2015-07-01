@@ -1,0 +1,29 @@
+<ion-view animation="slide-left-right" align-title="center" title="ElasticSearch Settings<img class='title-image' src='img/logo.png' />" left-buttons="leftButtons" right-buttons="rightButtons" hide-back-button="true" class="bubble-background">
+  <ion-content>
+    <form ng-submit="doLogin(loginData)">
+    <div>
+    <p></p>
+    </div>
+      <div class="list" ng-controller="SettingsCtrl">
+        <label class="item item-input">
+          <span class="input-label">ElasticSearch URL:</span>
+          <input type="text" ng-model="loginData.username" ng-value="test">
+        </label>
+        
+        <ion-checkbox ng-model="isChecked">Authentication Required</ion-checkbox>
+        <label class="item item-input">
+          <span class="input-label">Username:</span>
+          <input type="text" ng-model="loginData.username">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Password:</span>
+          <input type="password" ng-model="loginData.pwd">
+        </label>
+        <label class="item">
+          <button class="button button-block button-positive" type="submit">Save</button>
+        </label>
+      </div>
+    </form>
+
+  </ion-content>
+</ion-view>
